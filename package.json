@@ -1,0 +1,22 @@
+{
+  "name": "keyboard-korean-converter",
+  "version": "0.1.0",
+  "description": "Keyboard Map Converter between Korean and English",
+  "main": "dist/converter.js",
+  "types": "dist/converter.d.ts",
+  "scripts": {
+    "test": "jest",
+    "build": "tsc"
+  },
+  "keywords": [
+    "converter",
+    "korean",
+    "english"
+  ],
+  "author": "leedohyung28",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/jest": "^29.5.12",
+    "typescript": "^5.6.2"
+  }
+}
