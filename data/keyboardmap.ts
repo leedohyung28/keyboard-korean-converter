@@ -8,7 +8,7 @@ const keyboardMapKorToEng: { [key: string]: string } = {
   ㄱ: "r",
   ㄲ: "r",
   ㅅ: "t",
-  ㅆ: "r",
+  ㅆ: "t",
   ㅛ: "y",
   ㅕ: "u",
   ㅑ: "i",

@@ -1,8 +1,9 @@
 import { keyboardMapKorToEng } from "../data/keyboardmap";
+import splitHangul from "./splitHangul";
 
 function convertKoreanKeyboard(input: string) {
   try {
-    return input
+    return splitHangul(input)
       .split("")
       .map((char: string) => keyboardMapKorToEng[char] || char)
       .join("");

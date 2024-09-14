@@ -1,8 +1,9 @@
 import { keyboardMapKorToEng, keyboardMapEngToKor } from "../data/keyboardmap";
+import splitHangul from "./splitHangul";
 
 function convertKeyboard(input: string) {
   try {
-    return input
+    return splitHangul(input)
       .split("")
       .map((char: string) => {
         if (keyboardMapEngToKor[char]) {

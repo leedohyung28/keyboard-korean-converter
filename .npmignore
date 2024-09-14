@@ -1,7 +1,10 @@
 node_modules/
-dist/
 test/
 webpack.*.js/
+
+tsconfig.json
+tsup.config.tsconfig
+jest.config.cjs
 
 README.md
 LICENSE

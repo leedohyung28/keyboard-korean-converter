@@ -13,6 +13,12 @@ describe("convertKeyboard", () => {
     expect(convertKeyboard("123asdf321")).toBe("123ㅁㄴㅇㄹ321");
   });
 
+  it("combined korean must be converted to english", () => {
+    expect(convertKeyboard("예시")).toBe("dptl");
+    expect(convertKeyboard("테스트test")).toBe("xptmxmㅅㄷㄴㅅ");
+    expect(convertKeyboard("123가나다라asdf")).toBe("123rkskekfkㅁㄴㅇㄹ");
+  });
+
   it("english and korean have to be swapped", () => {
     expect(convertKeyboard("ㄱk")).toBe("rㅏ");
     expect(convertKeyboard("ㅇㅖexamㅅㅣple")).toBe("dpㄷㅌㅁㅡtlㅔㅣㄷ");
